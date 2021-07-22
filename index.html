@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Stock : Profit or Loss</title>
+</head>
+
+<body>
+    <div class="container card">
+        <div class="row1">
+            <div class="inps">
+                <p class="heading">Check Profit/Loss on your Stock</p>
+                <form id="form">
+                    <div class="inputs">
+                        <input type="number" min="0.0001" step="0.00001" placeholder="Purchase Price" class="inp" name="purchasedPrice" id="purchasedPrice" required>
+                    </div>
+                    <div class="inputs">
+                        <input type="number" min="1" step="1" placeholder="Stock Quantity" class="inp" name="quantity" id="quantity" required>
+                    </div>
+                    <div class="inputs">
+                        <input type="number" min="0.0001" step="0.00001" placeholder="Current Price" class="inp" name="currentPrice" id="currentPrice" required>
+                    </div>
+                    <button class="btn" type="submit">Calculate</button>
+                </form>
+                <div class="op">
+                    <p class="heading1" id="res"></p>
+                </div>
+            </div>
+            <div class="vr"></div>
+        </div>
+        <div class="row2">
+            <img src="./images/stock.svg" class="stock-img" id="stock" alt="stock">
+            <img src="./images/up.svg" class="stock-up-img hidden" id="stockUp" alt="profit">
+            <img src="./images/down.svg" class="stock-down-img hidden" id="stockDown" alt="loss">
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
