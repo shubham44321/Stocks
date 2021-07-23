@@ -40,6 +40,10 @@ form.addEventListener("submit", (event) => {
       stockUp.classList.remove("hidden");
       stockImg.classList.add("hidden");
       stockDown.classList.add("hidden");
+      document.getElementById("res").classList.add("add-profit-theme");
+      setTimeout(() => {
+        document.getElementById("res").classList.remove("add-profit-theme");
+      }, 5000);
     } else {
       stockUp.classList.add("hidden");
       stockImg.classList.remove("hidden");
@@ -55,6 +59,10 @@ form.addEventListener("submit", (event) => {
       stockUp.classList.add("hidden");
       stockImg.classList.add("hidden");
       stockDown.classList.remove("hidden");
+      document.getElementById("res").classList.add("add-loss-theme");
+      setTimeout(() => {
+        document.getElementById("res").classList.remove("add-loss-theme");
+      }, 5000);
     } else {
       stockUp.classList.add("hidden");
       stockImg.classList.remove("hidden");
