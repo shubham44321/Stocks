@@ -1,3 +1,3 @@
 # Stocks
 
-A simple [website](https://shubham44321.github.io/Stocks/index.html) to check whether you have profit or loss in your stocks.
+A simple [website](https://stocks-df7659.netlify.app/) to check whether you have profit or loss in your stocks.
